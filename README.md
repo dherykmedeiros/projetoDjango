@@ -23,73 +23,44 @@ Este é um projeto básico de cadastro de usuários desenvolvido com o framework
 ## Instalação
 
 1. Clone este repositório:
-   \`\`\`bash
+   
    git clone https://github.com/dherykmedeiros/projetoDjango.git
    cd projetoDjango1
-   \`\`\`
+   
 
 2. Crie e ative um ambiente virtual:
-   \`\`\`bash
+   
    python -m venv venv
    source venv/bin/activate   # Para Linux/Mac
    venv\Scripts\activate      # Para Windows
-   \`\`\`
+   
 
 3. Instale as dependências:
-   \`\`\`bash
+   
    pip install -r requirements.txt
-   \`\`\`
+   
 
 4. Execute as migrações do banco de dados:
-   \`\`\`bash
+   
    python manage.py migrate
-   \`\`\`
+   
 
 5. Inicie o servidor de desenvolvimento:
-   \`\`\`bash
+   
    python manage.py runserver
-   \`\`\`
+   
 
 6. Acesse o aplicativo em seu navegador:
-   \`\`\`
+   
    http://127.0.0.1:8000/
-   \`\`\`
+   
 
-## Estrutura do Projeto
-
-\`\`\`
-projetoDjango1/
-│
-├── manage.py
-├── db.sqlite3
-├── requirements.txt
-├── cadastro_de_usuarios/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── app_cad_usuarios/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── migrations/
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   ├── views.py
-│   └── templates/
-│       └── usuarios/
-│           ├── base.html
-│           ├── home.html
-│           └── usuarios.html
-\`\`\`
 
 ## Modelos
 
 O modelo de usuário está definido no arquivo \`models.py\` do aplicativo \`app_cad_usuarios\`:
 
-\`\`\`python
+
 from django.db import models
 
 class Usuario(models.Model):
@@ -97,7 +68,7 @@ class Usuario(models.Model):
     nome = models.TextField(max_length=255)
     idade = models.IntegerField()
 
-\`\`\`
+
 
 ## Contribuição
 
