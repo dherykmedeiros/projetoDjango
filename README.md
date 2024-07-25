@@ -24,14 +24,14 @@ Este é um projeto básico de cadastro de usuários desenvolvido com o framework
 
 1. Clone este repositório:
    
-   git clone https://github.com/dherykmedeiros/projetoDjango.git
+   git clone https://github.com/dherykmedeiros/projetoDjango.git<br>
    cd projetoDjango1
    
 
 2. Crie e ative um ambiente virtual:
    
-   python -m venv venv
-   source venv/bin/activate   # Para Linux/Mac
+   python -m venv venv<br>
+   source venv/bin/activate   # Para Linux/Mac<br>
    venv\Scripts\activate      # Para Windows
    
 
@@ -63,9 +63,9 @@ O modelo de usuário está definido no arquivo \`models.py\` do aplicativo \`app
 
 from django.db import models
 
-class Usuario(models.Model):
-    id_usuario = models.AutoField(primary_key=True)
-    nome = models.TextField(max_length=255)
+class Usuario(models.Model):<br>
+    id_usuario = models.AutoField(primary_key=True)<br>
+    nome = models.TextField(max_length=255)<br>
     idade = models.IntegerField()
 
 
